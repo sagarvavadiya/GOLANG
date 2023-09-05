@@ -1,0 +1,24 @@
+1. install go extension
+2. ctr+shift+p => go: search install update tool => select all => install
+3. Varible namination: local: small case;global: pascal case;package: camel case
+4. "var" keyward compulsary in global variable declaration
+5. duringnuse of var,don't use :=(auto variable declaration)
+6. Data typr conversion :
+	int to int conversion: var b int32 = 100; var b int64 = int64(a)
+    int to string conversion:  var str int = 65;  var d string = strconv.Itoa(str)
+7. Type & Value of data: fmt.Printf("%v, %T", d, d)
+8. Import packeges : import ("fmt","strconv")
+9. Defining array : var arr = [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9}   ([...] for undefinite length)
+
+from 01:15
+array method:
+1. Change array element from index
+        var arr = [...]int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+        arr [1] = 20
+2. Copy of array
+        arr2 := arr
+3. Slice: fmt. Println(arr[1:7]) and fmt. Println(arr[:7])and fmt. Println(arr[2:])
+
+Metrix method:
+1.  var matrix [3][3]int = [3][3]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+    fmt.println(matrix [1][1]) => 5
