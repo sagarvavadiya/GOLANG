@@ -1,0 +1,55 @@
+Switch case:
+
+        1.
+        switch veriable {
+        case 5,8:              // mutipal cases
+            fmt.println("Hi")
+            fallthrough        // fallthrough means any case active, it's instant next(only) case also active  
+        case 4:
+            fmt.println("Hello")
+        default:
+            fmt.println("None")
+        }
+
+        2. 
+
+        switch x.(type) {
+        case int:
+            fmt.println("Hi")
+        case float32:
+            fmt.println("Hello")
+        case string:
+            fmt.println("Hey")
+        default:
+            fmt.println("None")
+        }
+
+Defer:
+ 
+        defer fmt.println("1. I")   // This will set at last in callstake
+        fmt.println("2. Love")
+        fmt.println("3. Programming")
+
+        output: 
+        2. Love
+        3. Programming
+        1. I
+
+Memory location:
+        var x int = 90
+        var b *int = &x    // b address to memory location of x
+        fmt.println(x)
+        fmt.println(*b)    // print value which  address to memory location of x
+
+
+
+
+Function: 
+
+func summation (vals...int) {
+    sum := 0
+    for _,n = range vals {
+    
+    sum += n
+    }
+    return sum }
